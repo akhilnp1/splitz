@@ -1,0 +1,1626 @@
+{
+  "info": {
+    "_postman_id": "7f8d4e93-0225-427e-9dc1-98bb1b65fc2a",
+    "name": "splitz",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "41190090",
+    "_collection_link": "https://go.postman.co/collection/41190090-7f8d4e93-0225-427e-9dc1-98bb1b65fc2a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"test1@gmail.com\",\r\n  \"password\": \"test1\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/login/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "login",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Login",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"email\": \"test1@gmail.com\",\r\n  \"password\": \"test1\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/auth/login/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "auth",
+                    "login",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Feb 2026 12:47:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "489"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3MjgwMTIyMiwiaWF0IjoxNzcyMTk2NDIyLCJqdGkiOiI2OWRjMWNlOTJiZWI0NTQ5OTEwY2I0ODNlMzBiYjA1MCIsInVzZXJfaWQiOiIyIn0.wTF6K0YL20eCrIsG2VWCm5p-wslBL7FHbhG3srz-1SY\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjAwMDIyLCJpYXQiOjE3NzIxOTY0MjMsImp0aSI6IjkzMDg4YTAyMzMxMTQ2N2E5NmE2YzhjNjViZjMxYzhlIiwidXNlcl9pZCI6IjIifQ.DBA3jE5dp4iZkpfXZ17syRbWflP1U-nj0if2zFERRKo\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"username\": \"test6\",\r\n  \"email\": \"test6@gmail.com\",\r\n  \"password\": \"test6\",\r\n  \"password2\": \"test6\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/register/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "register",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Register",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"username\": \"test5\",\r\n  \"email\": \"test5@gmail.com\",\r\n  \"password\": \"test5\",\r\n  \"password2\": \"test5\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/auth/register/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "auth",
+                    "register",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Feb 2026 12:49:59 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "618"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"user\": {\n        \"id\": 6,\n        \"username\": \"test5\",\n        \"email\": \"test5@gmail.com\",\n        \"avatar\": null,\n        \"created_at\": \"2026-02-27T12:49:59.371972Z\"\n    },\n    \"tokens\": {\n        \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3MjgwMTM5OSwiaWF0IjoxNzcyMTk2NTk5LCJqdGkiOiJhYzc1ZjQ4NGMyNjA0ZDFiOTc3N2U1OTE2MjcyMDYwYSIsInVzZXJfaWQiOiI2In0.PIPFHnWS4jGtv4PLOtheWWi_WswI9w4g_u-LVeKzctU\",\n        \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjAwMTk5LCJpYXQiOjE3NzIxOTY1OTksImp0aSI6Ijc4MTdjZThjZGEzNDQ5MGI5ZDgxNDI4ZjNmMjUxOGI5IiwidXNlcl9pZCI6IjYifQ.uOHnuwqsMljsDqzKMXA0Ej7twVjNwp2nS-wr3lMkXkc\"\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Profile",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjAwMTk5LCJpYXQiOjE3NzIxOTY1OTksImp0aSI6Ijc4MTdjZThjZGEzNDQ5MGI5ZDgxNDI4ZjNmMjUxOGI5IiwidXNlcl9pZCI6IjYifQ.uOHnuwqsMljsDqzKMXA0Ej7twVjNwp2nS-wr3lMkXkc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/auth/profile/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "profile",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get Profile",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/auth/profile/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "auth",
+                    "profile",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Feb 2026 12:51:35 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, PATCH, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "110"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 6,\n    \"username\": \"test5\",\n    \"email\": \"test5@gmail.com\",\n    \"avatar\": null,\n    \"created_at\": \"2026-02-27T12:49:59.371972Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjAwMTk5LCJpYXQiOjE3NzIxOTY1OTksImp0aSI6Ijc4MTdjZThjZGEzNDQ5MGI5ZDgxNDI4ZjNmMjUxOGI5IiwidXNlcl9pZCI6IjYifQ.uOHnuwqsMljsDqzKMXA0Ej7twVjNwp2nS-wr3lMkXkc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3MjgwMTM5OSwiaWF0IjoxNzcyMTk2NTk5LCJqdGkiOiJhYzc1ZjQ4NGMyNjA0ZDFiOTc3N2U1OTE2MjcyMDYwYSIsInVzZXJfaWQiOiI2In0.PIPFHnWS4jGtv4PLOtheWWi_WswI9w4g_u-LVeKzctU\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/logout/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "logout",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Logout",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3MjgwMTM5OSwiaWF0IjoxNzcyMTk2NTk5LCJqdGkiOiJhYzc1ZjQ4NGMyNjA0ZDFiOTc3N2U1OTE2MjcyMDYwYSIsInVzZXJfaWQiOiI2In0.PIPFHnWS4jGtv4PLOtheWWi_WswI9w4g_u-LVeKzctU\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/auth/logout/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "auth",
+                    "logout",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Feb 2026 12:53:39 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "37"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"detail\": \"Logged out successfully.\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Groups",
+      "item": [
+        {
+          "name": "List My Groups",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjAwMDIyLCJpYXQiOjE3NzIxOTY0MjMsImp0aSI6IjkzMDg4YTAyMzMxMTQ2N2E5NmE2YzhjNjViZjMxYzhlIiwidXNlcl9pZCI6IjIifQ.DBA3jE5dp4iZkpfXZ17syRbWflP1U-nj0if2zFERRKo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/groups/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "groups",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "List My Groups",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/groups/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "groups",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Feb 2026 12:56:03 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "4520"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"count\": 5,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 6,\n            \"name\": \"home rent\",\n            \"description\": \"\",\n            \"created_by\": {\n                \"id\": 5,\n                \"username\": \"test4\",\n                \"email\": \"test4@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-27T06:57:01.372294Z\"\n            },\n            \"members\": [\n                {\n                    \"user\": {\n                        \"id\": 5,\n                        \"username\": \"test4\",\n                        \"email\": \"test4@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:57:01.372294Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T12:12:22.567738Z\",\n                    \"is_admin\": true\n                },\n                {\n                    \"user\": {\n                        \"id\": 2,\n                        \"username\": \"test1\",\n                        \"email\": \"test1@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:52:27.900422Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T12:12:48.790257Z\",\n                    \"is_admin\": false\n                },\n                {\n                    \"user\": {\n                        \"id\": 3,\n                        \"username\": \"test2\",\n                        \"email\": \"test2@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:55:27.446483Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T12:12:59.376782Z\",\n                    \"is_admin\": false\n                },\n                {\n                    \"user\": {\n                        \"id\": 4,\n                        \"username\": \"test3\",\n                        \"email\": \"test3@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:56:30.125440Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T12:13:16.474243Z\",\n                    \"is_admin\": false\n                }\n            ],\n            \"member_count\": 4,\n            \"created_at\": \"2026-02-27T12:12:22.084293Z\",\n            \"updated_at\": \"2026-02-27T12:12:22.084328Z\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"cab expences\",\n            \"description\": \"\",\n            \"created_by\": {\n                \"id\": 2,\n                \"username\": \"test1\",\n                \"email\": \"test1@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-27T06:52:27.900422Z\"\n            },\n            \"members\": [\n                {\n                    \"user\": {\n                        \"id\": 2,\n                        \"username\": \"test1\",\n                        \"email\": \"test1@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:52:27.900422Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T11:56:48.998094Z\",\n                    \"is_admin\": true\n                },\n                {\n                    \"user\": {\n                        \"id\": 3,\n                        \"username\": \"test2\",\n                        \"email\": \"test2@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:55:27.446483Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T11:57:12.966662Z\",\n                    \"is_admin\": false\n                },\n                {\n                    \"user\": {\n                        \"id\": 4,\n                        \"username\": \"test3\",\n                        \"email\": \"test3@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:56:30.125440Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T11:57:41.302795Z\",\n                    \"is_admin\": false\n                },\n                {\n                    \"user\": {\n                        \"id\": 5,\n                        \"username\": \"test4\",\n                        \"email\": \"test4@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:57:01.372294Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T11:57:56.321258Z\",\n                    \"is_admin\": false\n                }\n            ],\n            \"member_count\": 4,\n            \"created_at\": \"2026-02-27T11:56:48.717809Z\",\n            \"updated_at\": \"2026-02-27T11:56:48.717828Z\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"goa trip\",\n            \"description\": \"\",\n            \"created_by\": {\n                \"id\": 3,\n                \"username\": \"test2\",\n                \"email\": \"test2@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-27T06:55:27.446483Z\"\n            },\n            \"members\": [\n                {\n                    \"user\": {\n                        \"id\": 3,\n                        \"username\": \"test2\",\n                        \"email\": \"test2@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:55:27.446483Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T11:36:04.771171Z\",\n                    \"is_admin\": true\n                },\n                {\n                    \"user\": {\n                        \"id\": 2,\n                        \"username\": \"test1\",\n                        \"email\": \"test1@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:52:27.900422Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T11:37:11.831954Z\",\n                    \"is_admin\": false\n                },\n                {\n                    \"user\": {\n                        \"id\": 4,\n                        \"username\": \"test3\",\n                        \"email\": \"test3@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:56:30.125440Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T11:37:32.888970Z\",\n                    \"is_admin\": false\n                },\n                {\n                    \"user\": {\n                        \"id\": 5,\n                        \"username\": \"test4\",\n                        \"email\": \"test4@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:57:01.372294Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T11:38:00.077390Z\",\n                    \"is_admin\": false\n                }\n            ],\n            \"member_count\": 4,\n            \"created_at\": \"2026-02-27T11:36:04.583924Z\",\n            \"updated_at\": \"2026-02-27T11:36:04.583964Z\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"python job\",\n            \"description\": \"\",\n            \"created_by\": {\n                \"id\": 5,\n                \"username\": \"test4\",\n                \"email\": \"test4@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-27T06:57:01.372294Z\"\n            },\n            \"members\": [\n                {\n                    \"user\": {\n                        \"id\": 5,\n                        \"username\": \"test4\",\n                        \"email\": \"test4@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:57:01.372294Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T06:57:12.661764Z\",\n                    \"is_admin\": true\n                },\n                {\n                    \"user\": {\n                        \"id\": 2,\n                        \"username\": \"test1\",\n                        \"email\": \"test1@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:52:27.900422Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T06:57:37.840646Z\",\n                    \"is_admin\": false\n                },\n                {\n                    \"user\": {\n                        \"id\": 4,\n                        \"username\": \"test3\",\n                        \"email\": \"test3@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:56:30.125440Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T06:57:52.769821Z\",\n                    \"is_admin\": false\n                },\n                {\n                    \"user\": {\n                        \"id\": 3,\n                        \"username\": \"test2\",\n                        \"email\": \"test2@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:55:27.446483Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T06:58:24.537468Z\",\n                    \"is_admin\": false\n                }\n            ],\n            \"member_count\": 4,\n            \"created_at\": \"2026-02-27T06:57:12.506071Z\",\n            \"updated_at\": \"2026-02-27T06:57:12.506096Z\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"python\",\n            \"description\": \"python jibs\",\n            \"created_by\": {\n                \"id\": 2,\n                \"username\": \"test1\",\n                \"email\": \"test1@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-27T06:52:27.900422Z\"\n            },\n            \"members\": [\n                {\n                    \"user\": {\n                        \"id\": 2,\n                        \"username\": \"test1\",\n                        \"email\": \"test1@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-27T06:52:27.900422Z\"\n                    },\n                    \"joined_at\": \"2026-02-27T06:53:04.818397Z\",\n                    \"is_admin\": true\n                }\n            ],\n            \"member_count\": 1,\n            \"created_at\": \"2026-02-27T06:53:03.819622Z\",\n            \"updated_at\": \"2026-02-27T06:53:03.819650Z\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create Group",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjAwMDIyLCJpYXQiOjE3NzIxOTY0MjMsImp0aSI6IjkzMDg4YTAyMzMxMTQ2N2E5NmE2YzhjNjViZjMxYzhlIiwidXNlcl9pZCI6IjIifQ.DBA3jE5dp4iZkpfXZ17syRbWflP1U-nj0if2zFERRKo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Trip to Goa\",\r\n  \"description\": \"Beach trip\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/groups/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "groups",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create Group",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Trip to Goa\",\r\n  \"description\": \"Beach trip\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/groups/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "groups",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Feb 2026 12:59:09 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "473"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 7,\n    \"name\": \"Trip to Goa\",\n    \"description\": \"Beach trip\",\n    \"created_by\": {\n        \"id\": 2,\n        \"username\": \"test1\",\n        \"email\": \"test1@gmail.com\",\n        \"avatar\": null,\n        \"created_at\": \"2026-02-27T06:52:27.900422Z\"\n    },\n    \"members\": [\n        {\n            \"user\": {\n                \"id\": 2,\n                \"username\": \"test1\",\n                \"email\": \"test1@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-27T06:52:27.900422Z\"\n            },\n            \"joined_at\": \"2026-02-27T12:59:09.117440Z\",\n            \"is_admin\": true\n        }\n    ],\n    \"member_count\": 1,\n    \"created_at\": \"2026-02-27T12:59:08.950590Z\",\n    \"updated_at\": \"2026-02-27T12:59:08.950614Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Add Member",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjAwMDIyLCJpYXQiOjE3NzIxOTY0MjMsImp0aSI6IjkzMDg4YTAyMzMxMTQ2N2E5NmE2YzhjNjViZjMxYzhlIiwidXNlcl9pZCI6IjIifQ.DBA3jE5dp4iZkpfXZ17syRbWflP1U-nj0if2zFERRKo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"test2@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/groups/7/add-member/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "groups",
+                "7",
+                "add-member",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Add Member",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"email\": \"test2@gmail.com\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/groups/7/add-member/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "groups",
+                    "7",
+                    "add-member",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Fri, 27 Feb 2026 13:02:25 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "POST, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "48"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"detail\": \"test2@gmail.com added successfully.\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Balances",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjU4OTY5LCJpYXQiOjE3NzIyNTUzNzAsImp0aSI6ImE2NDdmNzU5MDgwZDQxMzhhMjljODBkMjBmOThjM2MxIiwidXNlcl9pZCI6IjExIn0.aQ-mzIBFi1E3eF14wpd5wOnmFdhwKuzdQyQlTZ04mK8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/groups/8/balances/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "groups",
+                "8",
+                "balances",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get Balances",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/groups/8/balances/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "groups",
+                    "8",
+                    "balances",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sat, 28 Feb 2026 05:45:32 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "325"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"user_id\": 11,\n        \"username\": \"test10\",\n        \"email\": \"test10@gmail.com\",\n        \"balance\": \"24000.00\"\n    },\n    {\n        \"user_id\": 10,\n        \"username\": \"test9\",\n        \"email\": \"test9@gmail.com\",\n        \"balance\": \"-8000.00\"\n    },\n    {\n        \"user_id\": 9,\n        \"username\": \"test8\",\n        \"email\": \"test8@gmail.com\",\n        \"balance\": \"-8000.00\"\n    },\n    {\n        \"user_id\": 8,\n        \"username\": \"test7\",\n        \"email\": \"test7@gmail.com\",\n        \"balance\": \"-8000.00\"\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Get Settlements",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjU4OTY5LCJpYXQiOjE3NzIyNTUzNzAsImp0aSI6ImE2NDdmNzU5MDgwZDQxMzhhMjljODBkMjBmOThjM2MxIiwidXNlcl9pZCI6IjExIn0.aQ-mzIBFi1E3eF14wpd5wOnmFdhwKuzdQyQlTZ04mK8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/groups/8/settlements/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "groups",
+                "8",
+                "settlements",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get Settlements",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/groups/8/settlements/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "groups",
+                    "8",
+                    "settlements",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sat, 28 Feb 2026 05:45:05 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "464"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"from_user\": {\n            \"id\": 10,\n            \"username\": \"test9\",\n            \"email\": \"test9@gmail.com\"\n        },\n        \"to_user\": {\n            \"id\": 11,\n            \"username\": \"test10\",\n            \"email\": \"test10@gmail.com\"\n        },\n        \"amount\": \"8000.00\"\n    },\n    {\n        \"from_user\": {\n            \"id\": 9,\n            \"username\": \"test8\",\n            \"email\": \"test8@gmail.com\"\n        },\n        \"to_user\": {\n            \"id\": 11,\n            \"username\": \"test10\",\n            \"email\": \"test10@gmail.com\"\n        },\n        \"amount\": \"8000.00\"\n    },\n    {\n        \"from_user\": {\n            \"id\": 8,\n            \"username\": \"test7\",\n            \"email\": \"test7@gmail.com\"\n        },\n        \"to_user\": {\n            \"id\": 11,\n            \"username\": \"test10\",\n            \"email\": \"test10@gmail.com\"\n        },\n        \"amount\": \"8000.00\"\n    }\n]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Expenses",
+      "item": [
+        {
+          "name": "Equal Split",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjU4OTY5LCJpYXQiOjE3NzIyNTUzNzAsImp0aSI6ImE2NDdmNzU5MDgwZDQxMzhhMjljODBkMjBmOThjM2MxIiwidXNlcl9pZCI6IjExIn0.aQ-mzIBFi1E3eF14wpd5wOnmFdhwKuzdQyQlTZ04mK8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"description\": \"trip to goa\",\r\n  \"amount\": \"16000.00\",\r\n  \"paid_by_id\": 11,\r\n  \"split_type\": \"EQUAL\",\r\n  \"participant_ids\": [8, 9, 10]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/groups/8/expenses/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "groups",
+                "8",
+                "expenses",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Equal Split",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"description\": \"trip to goa\",\r\n  \"amount\": \"16000.00\",\r\n  \"paid_by_id\": 11,\r\n  \"split_type\": \"EQUAL\",\r\n  \"participant_ids\": [8, 9, 10]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/groups/8/expenses/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "groups",
+                    "8",
+                    "expenses",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sat, 28 Feb 2026 05:15:22 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "960"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 7,\n    \"group\": 8,\n    \"description\": \"trip to goa\",\n    \"amount\": \"16000.00\",\n    \"paid_by\": {\n        \"id\": 11,\n        \"username\": \"test10\",\n        \"email\": \"test10@gmail.com\",\n        \"avatar\": null,\n        \"created_at\": \"2026-02-28T05:06:58.024502Z\"\n    },\n    \"split_type\": \"EQUAL\",\n    \"splits\": [\n        {\n            \"id\": 19,\n            \"user\": {\n                \"id\": 8,\n                \"username\": \"test7\",\n                \"email\": \"test7@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-28T05:00:52.111720Z\"\n            },\n            \"amount_owed\": \"5333.34\",\n            \"is_settled\": false\n        },\n        {\n            \"id\": 20,\n            \"user\": {\n                \"id\": 9,\n                \"username\": \"test8\",\n                \"email\": \"test8@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-28T05:04:57.454364Z\"\n            },\n            \"amount_owed\": \"5333.33\",\n            \"is_settled\": false\n        },\n        {\n            \"id\": 21,\n            \"user\": {\n                \"id\": 10,\n                \"username\": \"test9\",\n                \"email\": \"test9@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-28T05:06:28.530770Z\"\n            },\n            \"amount_owed\": \"5333.33\",\n            \"is_settled\": false\n        }\n    ],\n    \"created_by\": {\n        \"id\": 11,\n        \"username\": \"test10\",\n        \"email\": \"test10@gmail.com\",\n        \"avatar\": null,\n        \"created_at\": \"2026-02-28T05:06:58.024502Z\"\n    },\n    \"notes\": \"\",\n    \"created_at\": \"2026-02-28T05:15:21.405151Z\",\n    \"updated_at\": \"2026-02-28T05:15:21.405174Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create Expense - Payer Not In Split\"",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjU4OTY5LCJpYXQiOjE3NzIyNTUzNzAsImp0aSI6ImE2NDdmNzU5MDgwZDQxMzhhMjljODBkMjBmOThjM2MxIiwidXNlcl9pZCI6IjExIn0.aQ-mzIBFi1E3eF14wpd5wOnmFdhwKuzdQyQlTZ04mK8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"description\": \"food goan trip\",\r\n  \"amount\": \"8000.00\",\r\n  \"paid_by_id\": 11,\r\n  \"split_type\": \"EQUAL\",\r\n  \"participant_ids\": [10,9,8]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/groups/8/expenses/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "groups",
+                "8",
+                "expenses",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create Expense - Payer Not In Split\"",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"description\": \"food goan trip\",\r\n  \"amount\": \"8000.00\",\r\n  \"paid_by_id\": 11,\r\n  \"split_type\": \"EQUAL\",\r\n  \"participant_ids\": [10,9,8]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/groups/8/expenses/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "groups",
+                    "8",
+                    "expenses",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sat, 28 Feb 2026 05:42:56 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "962"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 8,\n    \"group\": 8,\n    \"description\": \"food goan trip\",\n    \"amount\": \"8000.00\",\n    \"paid_by\": {\n        \"id\": 11,\n        \"username\": \"test10\",\n        \"email\": \"test10@gmail.com\",\n        \"avatar\": null,\n        \"created_at\": \"2026-02-28T05:06:58.024502Z\"\n    },\n    \"split_type\": \"EQUAL\",\n    \"splits\": [\n        {\n            \"id\": 22,\n            \"user\": {\n                \"id\": 8,\n                \"username\": \"test7\",\n                \"email\": \"test7@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-28T05:00:52.111720Z\"\n            },\n            \"amount_owed\": \"2666.66\",\n            \"is_settled\": false\n        },\n        {\n            \"id\": 23,\n            \"user\": {\n                \"id\": 9,\n                \"username\": \"test8\",\n                \"email\": \"test8@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-28T05:04:57.454364Z\"\n            },\n            \"amount_owed\": \"2666.67\",\n            \"is_settled\": false\n        },\n        {\n            \"id\": 24,\n            \"user\": {\n                \"id\": 10,\n                \"username\": \"test9\",\n                \"email\": \"test9@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-28T05:06:28.530770Z\"\n            },\n            \"amount_owed\": \"2666.67\",\n            \"is_settled\": false\n        }\n    ],\n    \"created_by\": {\n        \"id\": 11,\n        \"username\": \"test10\",\n        \"email\": \"test10@gmail.com\",\n        \"avatar\": null,\n        \"created_at\": \"2026-02-28T05:06:58.024502Z\"\n    },\n    \"notes\": \"\",\n    \"created_at\": \"2026-02-28T05:42:55.771765Z\",\n    \"updated_at\": \"2026-02-28T05:42:55.771804Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "List Expenses",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjU4OTY5LCJpYXQiOjE3NzIyNTUzNzAsImp0aSI6ImE2NDdmNzU5MDgwZDQxMzhhMjljODBkMjBmOThjM2MxIiwidXNlcl9pZCI6IjExIn0.aQ-mzIBFi1E3eF14wpd5wOnmFdhwKuzdQyQlTZ04mK8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/groups/8/expenses/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "groups",
+                "8",
+                "expenses",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "List Expenses",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/groups/8/expenses/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "groups",
+                    "8",
+                    "expenses",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sat, 28 Feb 2026 05:44:15 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1975"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"count\": 2,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 8,\n            \"group\": 8,\n            \"description\": \"food goan trip\",\n            \"amount\": \"8000.00\",\n            \"paid_by\": {\n                \"id\": 11,\n                \"username\": \"test10\",\n                \"email\": \"test10@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-28T05:06:58.024502Z\"\n            },\n            \"split_type\": \"EQUAL\",\n            \"splits\": [\n                {\n                    \"id\": 22,\n                    \"user\": {\n                        \"id\": 8,\n                        \"username\": \"test7\",\n                        \"email\": \"test7@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-28T05:00:52.111720Z\"\n                    },\n                    \"amount_owed\": \"2666.66\",\n                    \"is_settled\": false\n                },\n                {\n                    \"id\": 23,\n                    \"user\": {\n                        \"id\": 9,\n                        \"username\": \"test8\",\n                        \"email\": \"test8@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-28T05:04:57.454364Z\"\n                    },\n                    \"amount_owed\": \"2666.67\",\n                    \"is_settled\": false\n                },\n                {\n                    \"id\": 24,\n                    \"user\": {\n                        \"id\": 10,\n                        \"username\": \"test9\",\n                        \"email\": \"test9@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-28T05:06:28.530770Z\"\n                    },\n                    \"amount_owed\": \"2666.67\",\n                    \"is_settled\": false\n                }\n            ],\n            \"created_by\": {\n                \"id\": 11,\n                \"username\": \"test10\",\n                \"email\": \"test10@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-28T05:06:58.024502Z\"\n            },\n            \"notes\": \"\",\n            \"created_at\": \"2026-02-28T05:42:55.771765Z\",\n            \"updated_at\": \"2026-02-28T05:42:55.771804Z\"\n        },\n        {\n            \"id\": 7,\n            \"group\": 8,\n            \"description\": \"trip to goa\",\n            \"amount\": \"16000.00\",\n            \"paid_by\": {\n                \"id\": 11,\n                \"username\": \"test10\",\n                \"email\": \"test10@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-28T05:06:58.024502Z\"\n            },\n            \"split_type\": \"EQUAL\",\n            \"splits\": [\n                {\n                    \"id\": 19,\n                    \"user\": {\n                        \"id\": 8,\n                        \"username\": \"test7\",\n                        \"email\": \"test7@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-28T05:00:52.111720Z\"\n                    },\n                    \"amount_owed\": \"5333.34\",\n                    \"is_settled\": false\n                },\n                {\n                    \"id\": 20,\n                    \"user\": {\n                        \"id\": 9,\n                        \"username\": \"test8\",\n                        \"email\": \"test8@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-28T05:04:57.454364Z\"\n                    },\n                    \"amount_owed\": \"5333.33\",\n                    \"is_settled\": false\n                },\n                {\n                    \"id\": 21,\n                    \"user\": {\n                        \"id\": 10,\n                        \"username\": \"test9\",\n                        \"email\": \"test9@gmail.com\",\n                        \"avatar\": null,\n                        \"created_at\": \"2026-02-28T05:06:28.530770Z\"\n                    },\n                    \"amount_owed\": \"5333.33\",\n                    \"is_settled\": false\n                }\n            ],\n            \"created_by\": {\n                \"id\": 11,\n                \"username\": \"test10\",\n                \"email\": \"test10@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-28T05:06:58.024502Z\"\n            },\n            \"notes\": \"\",\n            \"created_at\": \"2026-02-28T05:15:21.405151Z\",\n            \"updated_at\": \"2026-02-28T05:15:21.405174Z\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Expense",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjUyOTM0LCJpYXQiOjE3NzIyNDkzMzUsImp0aSI6Ijg3OTAzNDUzMzA5NTQ2NmZhMzg1YzU4N2Y5MmY1NTE0IiwidXNlcl9pZCI6IjIifQ.ANRgGy1iEm2d8VF4cS7_OK90Bab5UNm30M_bqyFaiy4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/expenses/2/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "expenses",
+                "2",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Delete Expense",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/expenses/2/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "expenses",
+                    "2",
+                    ""
+                  ]
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sat, 28 Feb 2026 03:53:17 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Repayments",
+      "item": [
+        {
+          "name": "Record Payment",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjYxMTk2LCJpYXQiOjE3NzIyNTc1OTYsImp0aSI6ImJkMDE2NDM0YzEyZDRiZWNhY2Q5Nzk4N2Q1YTQ3MmUwIiwidXNlcl9pZCI6IjEwIn0.lcwAlbbxD24-Gi7XBwI_EZon_rtWZ6j262OE6pR8p68",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"paid_to_id\": 11,\r\n  \"amount\": \"8000.00\",\r\n  \"note\": \"Paid via GPay\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/groups/8/repayments/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "groups",
+                "8",
+                "repayments",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Record Payment",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"paid_to_id\": 11,\r\n  \"amount\": \"8000.00\",\r\n  \"note\": \"Paid via GPay\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/groups/8/repayments/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "groups",
+                    "8",
+                    "repayments",
+                    ""
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sat, 28 Feb 2026 05:47:00 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "349"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 8,\n    \"group\": 8,\n    \"paid_by\": {\n        \"id\": 10,\n        \"username\": \"test9\",\n        \"email\": \"test9@gmail.com\",\n        \"avatar\": null,\n        \"created_at\": \"2026-02-28T05:06:28.530770Z\"\n    },\n    \"paid_to\": {\n        \"id\": 11,\n        \"username\": \"test10\",\n        \"email\": \"test10@gmail.com\",\n        \"avatar\": null,\n        \"created_at\": \"2026-02-28T05:06:58.024502Z\"\n    },\n    \"amount\": \"8000.00\",\n    \"note\": \"Paid via GPay\",\n    \"created_at\": \"2026-02-28T05:46:59.880082Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "List Repayments",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcyMjYxMTk2LCJpYXQiOjE3NzIyNTc1OTYsImp0aSI6ImJkMDE2NDM0YzEyZDRiZWNhY2Q5Nzk4N2Q1YTQ3MmUwIiwidXNlcl9pZCI6IjEwIn0.lcwAlbbxD24-Gi7XBwI_EZon_rtWZ6j262OE6pR8p68",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/groups/8/repayments/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "groups",
+                "8",
+                "repayments",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "List Repayments",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/groups/8/repayments/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "groups",
+                    "8",
+                    "repayments",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sat, 28 Feb 2026 05:47:37 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "WSGIServer/0.2 CPython/3.13.1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept, origin"
+                },
+                {
+                  "key": "Allow",
+                  "value": "GET, POST, HEAD, OPTIONS"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "DENY"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "401"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 8,\n            \"group\": 8,\n            \"paid_by\": {\n                \"id\": 10,\n                \"username\": \"test9\",\n                \"email\": \"test9@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-28T05:06:28.530770Z\"\n            },\n            \"paid_to\": {\n                \"id\": 11,\n                \"username\": \"test10\",\n                \"email\": \"test10@gmail.com\",\n                \"avatar\": null,\n                \"created_at\": \"2026-02-28T05:06:58.024502Z\"\n            },\n            \"amount\": \"8000.00\",\n            \"note\": \"Paid via GPay\",\n            \"created_at\": \"2026-02-28T05:46:59.880082Z\"\n        }\n    ]\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8000/api"
+    },
+    {
+      "key": "access_token",
+      "value": ""
+    },
+    {
+      "key": "refresh_token",
+      "value": ""
+    }
+  ]
+}
