@@ -43,10 +43,13 @@ pip install -r requirements.txt
 ```
 
 **Step 5 — Create .env file:**
+
+Copy the example file and rename it:
 ```bash
-SECRET_KEY=your-secret-key-here
-DEBUG=True
-ALLOWED_HOSTS=localhost,127.0.0.1
+cd backend
+copy .env.example .env
+```
+That's it! The default values work for local development.
 ```
 
 **Step 6 — Run migrations:**
